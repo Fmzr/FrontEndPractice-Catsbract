@@ -1,0 +1,247 @@
+/* Global Styles */
+/* Reset margin dan padding pada semua elemen */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* style dasar untuk body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* style container untuk memusatkan konten */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Section */
+/* Style untuk header */
+header {
+    background-color: #000;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* style logo */
+.logo .help-center {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 20px;
+}
+
+.logo a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.help-center a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    
+}
+
+/* Gaya untuk tombol di header */
+.header-buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.header-buttons a {
+    padding: 3px 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    
+}
+
+.btn-request {
+    background-color: transparent;
+}
+
+.btn-signin {
+    background-color: #4c5fd5;
+    border-color: #4c5fd5;
+}
+
+/* Hero Section styling */
+.hero {
+    display: flex;;
+    background-color: #dadbf1;
+    padding: 60px 0px;
+    text-align: center;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+.search-bar {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+.search-bar input {
+    width: 100%; /* Membuat input teks menyesuaikan dengan lebar kontainer */
+    padding: 10px; /* Memberikan ruang di dalam input */
+    font-size: 18px;
+    border: 1px solid gray;  /* Border abu-abu untuk input */
+    border-radius: 5px; /* Membuat sudut input membulat */
+    outline: none; /* Menghilangkan garis tepi default saat input aktif */
+    padding-right: 50px; /* Memberikan ruang untuk tombol di sebelah kanan */
+}
+
+.search-bar button {
+    position: absolute; /* Memastikan tombol berada di dalam input */
+    right: 10px; /* Menempatkan tombol di sebelah kanan input */
+    top: 50%;
+    transform: translateY(-50%); /* Menyelaraskan tombol secara vertikal */
+    background: none;
+    border: none;
+    cursor: pointer; /* Memberikan pointer kursor saat tombol dihover */
+}
+
+.search-bar button:hover {
+    color: #4c5fd5;
+}
+
+/* Section content Utama */
+.content .container {
+    padding: 60px 0; /* Memberikan jarak vertikal di atas dan bawah */
+    background-color: #fff;
+    display: grid; /* Menggunakan grid layout untuk tata letak card */
+    grid-template-columns: repeat(2, minmax(250px, 1fr)); /* Grid responsif */
+    gap: 40px 20px;
+    place-items: center;
+}
+
+.card {
+    display: flex; /* Flexbox untuk menyusun gambar dan teks secara horizontal */
+    align-items: flex-start;
+    background-color: none;
+    padding: 20px;
+    
+}
+
+.card img {
+    width: 60px; /* Ukuran gambar */
+    height: auto; /* Membiarkan proporsi gambar tetap */
+    margin-right: 20px; /* Memberikan jarak antara gambar dan teks */
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column; /* Menyusun konten teks secara vertikal */
+    justify-content: center; /* Pusatkan teks di dalam konten */
+}
+
+.card-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.card-content a {
+    text-decoration: none;
+    color: #4c5fd5;
+    transition: color 0.3 ease;
+}
+
+.card-content a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer h3 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.footer-abstract {
+    font-size: 12px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+.footer-company h4{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.footer-company p {
+    font-size: 12px;
+}
+
+.footer-bottom p{
+    font-size: 15px;
+}
+
+.footer-bottom img {
+    width: 30px;
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    margin-top: 115px;
+}
