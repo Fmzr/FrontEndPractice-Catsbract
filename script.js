@@ -25,3 +25,22 @@ searchInput.addEventListener('keypress', function (e) {
 
 // KUMPULAN FUNGSI BAGIAN SEARCHBAR SAMPAI SINI FUNGSI ANIMATED UNDER
 // ___________________________________________________________________________________________
+
+// Fungsi sticky header
+
+const header = document.querySelector('header')
+
+// Mendapatkan posisi awal header
+
+const sticky = header.offsetTop
+
+// Menambahkan event listener untuk medeteksi saat pengguna menggulir halaman
+window.addEventListener('scroll', function() {
+    // Jika halaman digulir lebih dari posisi awal header maka menambahkan class sticky
+    if (this.window.scrollY > sticky) {
+        header.classList.add('sticky');
+    } else {
+        // Jika pengguna kembali ke posisi awal, hapus class sticky
+        header.classList.remove('sticky')
+    }
+})
