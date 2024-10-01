@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: arial, sans-serif;
+    background-color: #dadbf1;
+    height: 100vh;
+}
+
+#container {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    transform: rotate(45deg);
+    top: 0; bottom: 0; right: 0; left: 0;
+}
+
+.construction-container {
+    text-align: center;
+}
